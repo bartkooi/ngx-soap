@@ -15,7 +15,7 @@
     "copy": "node tools/bundle-scripts/copy-files.js && node tools/bundle-scripts/cleanup.js",
     "test": "rimraf spec/out && tsc -p tsconfig.spec.json && jasmine",
     "build:lib": "ng build --configuration production ngx-soap && copy README.md dist/ngx-soap && copy LICENSE dist/ngx-soap",
-	"pack": "cd ./dist/ngx-soap/ && npm pack && cd ../.. && copy dist\\ngx-soap\\ngx*tgz ..",
+	  "pack": "cd ./dist/ngx-soap/ && npm pack && cd ../.. && copy dist\\ngx-soap\\ngx*tgz ..",
     "postinstall": "ngcc"
   },
   "keywords": [
